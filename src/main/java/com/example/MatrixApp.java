@@ -24,6 +24,12 @@ public class MatrixApp extends Application {
         // --- 根布局：水平分割 (左侧设置，右侧交互) ---
         BorderPane root = new BorderPane();
 
+        root.setStyle(
+                "-fx-background-image: url('/images/bg_tech.png'); " +
+                        "-fx-background-size: cover; " +
+                        "-fx-background-position: center center;"
+        );
+
         // 1. 构建左侧设置栏
         VBox leftPanel = createLeftPanel();
         root.setLeft(leftPanel);
